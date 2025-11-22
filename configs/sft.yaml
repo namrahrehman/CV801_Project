@@ -1,0 +1,24 @@
+# Supervised Fine-Tuning Configuration
+# For training medical VQA models with LoRA
+
+# Model configuration
+model_id: "Qwen/Qwen2-VL-2B-Instruct"  # Base model to fine-tune
+
+# LoRA configuration
+lora_r: 16                    # LoRA rank
+lora_alpha: 32                # LoRA alpha (usually 2x lora_r)
+lora_dropout: 0.1             # LoRA dropout
+
+# Training configuration
+per_device_train_batch_size: 2    # Batch size per device
+gradient_accumulation_steps: 8    # Gradient accumulation steps
+lr: 2.0e-4                        # Learning rate
+warmup_ratio: 0.1                 # Warmup ratio
+num_train_steps: 1000             # Number of training steps
+max_seq_len: 2048                 # Maximum sequence length
+bf16: true                        # Use bfloat16 precision
+
+# Output configuration
+output_dir: "checkpoints/qwen2vl_sft"  # Output directory for checkpoints
+save_every_steps: 200                  # Save checkpoint every N steps
+
