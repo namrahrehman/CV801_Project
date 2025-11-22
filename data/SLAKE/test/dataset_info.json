@@ -1,0 +1,105 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "slake",
+  "dataset_size": 2358785,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/BoKelvin/SLAKE@a9083ce6c34ac3ffb17671a605962924d8a8f9e9/train.json": {
+      "num_bytes": 2964571,
+      "checksum": null
+    },
+    "hf://datasets/BoKelvin/SLAKE@a9083ce6c34ac3ffb17671a605962924d8a8f9e9/validation.json": {
+      "num_bytes": 639139,
+      "checksum": null
+    },
+    "hf://datasets/BoKelvin/SLAKE@a9083ce6c34ac3ffb17671a605962924d8a8f9e9/test.json": {
+      "num_bytes": 635829,
+      "checksum": null
+    }
+  },
+  "download_size": 4239539,
+  "features": {
+    "img_name": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "location": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "modality": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "base_type": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer_type": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "qid": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "content_type": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "triple": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "img_id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "q_lang": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 6598324,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 1649184,
+      "num_examples": 9835,
+      "dataset_name": "slake"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 356207,
+      "num_examples": 2099,
+      "dataset_name": "slake"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 353394,
+      "num_examples": 2094,
+      "dataset_name": "slake"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

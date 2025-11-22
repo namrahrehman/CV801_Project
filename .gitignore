@@ -16,11 +16,15 @@ checkpoints/
 *.bin
 *.safetensors
 
-# Data
-data/*.json
-data/*.jsonl
-*.arrow
-*.parquet
+# Data (commented out to allow pushing datasets)
+# data/*.json
+# data/*.jsonl
+# *.arrow
+# *.parquet
+
+# But ignore large generated data files
+data/outputs_cfproxy/*.jsonl
+data/outputs_cfproxy/*.json
 
 # Logs
 *.log
